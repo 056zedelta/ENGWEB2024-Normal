@@ -26,7 +26,7 @@ router.get('/', function(req, res) {
             entidade_comunicante: registro.entidade_comunicante
           };
         });
-        res.render('index', { title: 'Lista de Contratos 2024', lista: data });
+        res.render('contratos', { title: 'Lista de Contratos 2024', lista: data });
       })
       .catch(erro => res.status(500).send("Erro ao processar a solicitação."));
 });  
